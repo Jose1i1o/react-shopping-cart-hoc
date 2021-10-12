@@ -190,16 +190,16 @@ function App() {
       {/* <StateContext.Provider value={{ cartItems: cartItems }}> */}
       <BrowserRouter>
         <Switch>
-          <Route path="/checkout/step-1" exact>
+          <Route path="/checkout/firstStep" exact>
             <FirstStep />
           </Route>
-          <Route path="/checkout/step-2" exact>
+          <Route path="/checkout/SecondStep" exact>
             <SecondStep />
           </Route>
-          <Route path="/checkout/step-3" exact>
+          <Route path="/checkout/ThirdStep" exact>
             <ThirdStep />
           </Route>
-          <Route path="/checkout/order-summary" exact>
+          <Route path="/checkout/LastStep" exact>
             <LastStep />
           </Route>
           <Route path="/new-product">
