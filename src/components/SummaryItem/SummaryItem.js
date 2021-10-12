@@ -1,10 +1,10 @@
 import React, { useContext } from "react";
-import { ContextState } from "../../context/contextState";
+import { StateContext } from "../../context/contextState";
 
 import "./CartItem.scss";
 
 function SummaryItem({ img, title, price, quantity }) {
-  const value = useContext(ContextState);
+  const value = useContext(StateContext);
   const { currentStep } = value;
   return (
     <div className={currentStep === 4 ? "col col-5 pl-0 mb-3" : "col"}>

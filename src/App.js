@@ -187,10 +187,9 @@ function App() {
 
   return (
     <StateProvider>
-      {/* <StateContext.Provider value={{ cartItems: cartItems }}> */}
       <BrowserRouter>
         <Switch>
-          <Route path="/checkout/firstStep" exact>
+          <Route path="/checkout/FirstStep" exact>
             <FirstStep />
           </Route>
           <Route path="/checkout/SecondStep" exact>
@@ -223,7 +222,6 @@ function App() {
           </Route>
         </Switch>
       </BrowserRouter>
-      {/* </StateContext.Provider> */}
     </StateProvider>
   );
 }
